@@ -19,6 +19,7 @@ class ProductService(val db: JdbcTemplate) {
 
     fun getProduct(id: Long) = productRepository?.findById(id.toString())
 
+    fun addProduct(product: Product) = productRepository?.save(product)
 
     fun dummyProduct(): String {
         val p1 = Product(
