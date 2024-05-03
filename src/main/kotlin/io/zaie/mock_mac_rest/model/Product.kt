@@ -9,14 +9,39 @@ data class Product(
     val id: Long? = null,
 
     @ElementCollection
+    val briefMoreDescription: List<String>,
+    @ElementCollection
     val moreDescription: List<String>,
     @ElementCollection
-    var colors: List<DeviceColor>,
+    val colors: List<DeviceColor>,
+    @ElementCollection
+    val memory: List<CustomizeOption>,
+    @ElementCollection
+    val storage: List<CustomizeOption>,
+    @ElementCollection
+    val powerAdapter: List<CustomizeOption>,
+    @ElementCollection
+    val keyboardLanguage: List<String>,
 
-    val chipsetImage: String,
+    val productName: String,
+    val chipsetImageUrl: String,
     val price: String,
-    val installments: String,
+    val installmentPlan: String,
     var shortSpec: ShortSpec,
 ) {
-    constructor() : this(0, listOf(), listOf(), "", "", "", ShortSpec("", "", "", ""))
+    constructor() : this(
+        0,
+        listOf(),
+        listOf(),
+        listOf(),
+        listOf(),
+        listOf(),
+        listOf(),
+        listOf(),
+        "",
+        "",
+        "",
+        "",
+        ShortSpec("", "", "", "")
+    )
 }
