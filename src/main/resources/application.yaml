@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: mock_mac_rest
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:sqlite:mockMac.db
+    driver-class-name: org.sqlite.JDBC
+
