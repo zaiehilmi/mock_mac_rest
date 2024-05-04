@@ -42,7 +42,7 @@ class ProductService(val db: JdbcTemplate) {
             colors = listOf(
                 DeviceColor(
                     name = "Space Grey",
-                    image = "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-spacegray-select-202310?wid=904&hei=840&fmt=jpeg&qlt=95&.v=1697230830200"
+                    image = "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp-14-m3-max-pro-spaceblack-cto-hero-202310?wid=772&hei=466&fmt=jpeg&qlt=95&.v=1697913381727"
                 ),
                 DeviceColor(
                     name = "Silver",
