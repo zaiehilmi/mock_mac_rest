@@ -45,6 +45,7 @@ class ProductDataController(val service: ProductService) {
                 colors = it.colors,
                 installmentPlan = it.installmentPlan,
                 chipsetImageUrl = it.chipsetImageUrl,
+                shortSpec = it.shortSpec
             )
 
             products.add(temp)

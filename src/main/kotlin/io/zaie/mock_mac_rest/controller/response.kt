@@ -2,6 +2,7 @@ package io.zaie.mock_mac_rest.controller
 
 import io.zaie.mock_mac_rest.model.CustomizeOption
 import io.zaie.mock_mac_rest.model.DeviceColor
+import io.zaie.mock_mac_rest.model.ShortSpec
 
 data class ApiResponse<T>(
     val responseCode: Int,
@@ -15,6 +16,7 @@ data class ProductListingResponse(
     val briefMoreDescription: List<String>,
     val price: String,
     val installmentPlan: String,
+    val shortSpec: ShortSpec,
 )
 
 data class ProductCustomizationResponse(
